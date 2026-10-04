@@ -8,7 +8,7 @@ Analyze a suspicious email to identify phishing indicators, examine its email he
 
 ### Sample Analyzed
 
-* **Sample:** `sample2.eml`
+* **Sample:** `sample2-Redacted.txt`
 * **Claimed sender:** Microsoft Account Team
 * **Subject:** `[Action Required] Unusual sign-in activity on your account`
 * **Initial classification:** **Phishing — High Confidence**
@@ -32,9 +32,17 @@ Detailed examination of the email, including header analysis, authentication res
 
 ### Evidence
 
-Screenshots and other supporting evidence, where applicable, are stored under:
+Supporting evidence is stored under:
 
 `evidence/screenshots/`
+
+This includes the Google Admin Toolbox header-analysis result showing the SPF, DKIM, and DMARC failures.
+
+A sanitized text representation of the email source is also provided as:
+
+`sample2-Redacted.txt`
+
+The recipient address in the source has been redacted before publication.
 
 ### Classification Principle
 
@@ -44,4 +52,4 @@ For this sample, the combination of authentication failures, sender-domain imper
 
 ### Safety Note
 
-The suspicious URL in the sample was not opened or interacted with during analysis.
+The suspicious URL in the sample was not opened or interacted with during analysis. The email source is provided strictly for defensive cybersecurity education and analysis. The embedded URL should not be opened, resolved, or otherwise interacted with.
